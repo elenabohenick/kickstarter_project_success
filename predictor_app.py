@@ -14,9 +14,9 @@ with open("final_model_logreg_top10.pkl","rb") as f:
 with open("scaler.pkl","rb") as f:
     scaler = pickle.load(f)
 
-hr_features = ['Project Goal ($)',
-               'Project Length (days)',
-              'Number of Reward Tiers',
+hr_features = ['Project Goal ($)      ',
+               'Project Length (days) ',
+               'Number of Reward Tiers',
                'Is this your first project?',
               'Staff Pick',
                'publishing',
