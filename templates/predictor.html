@@ -10,6 +10,7 @@ h3 {text-align: center; font-family:courier; font-size: 1.6em;}
 h5 {text-align: center; font-family:courier; font-size: .83em;}
 p {text-align: center; font-family:courier; font-size: 0.975em;}
 
+
 </style>
 
 </head>
@@ -19,12 +20,13 @@ p {text-align: center; font-family:courier; font-size: 0.975em;}
   <h1>Will your project succeed on <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Kickstarter_logo.svg/2000px-Kickstarter_logo.svg.png"
   alt="Kickstarter logo" height="28" width="240"/> ?</h1>
   <!-- <p>Fill in info about your project to below</p> -->
+
+  <!-- Project Goal -->
   <form action="/">
 
     {% for f in feature_names[:3] %}
         <br>
-        <p>{{ f }}</p>
-        <p><input align="middle" type="text" name="{{ f }}" value="0"></p>
+       <div><p style="text-align:middle;">{{ f }}</p><p style="text-align:middle; float:middle;"><input  type="text" name="{{ f }}" value="0"></p></div>
     {% endfor %}
     <br>
 
@@ -46,7 +48,6 @@ p {text-align: center; font-family:courier; font-size: 0.975em;}
 
 
   </form>
-
 
     {% if x_input[0]==0 %}
       <h2>Fill out information about your project above.</h2>
